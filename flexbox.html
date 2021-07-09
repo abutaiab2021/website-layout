@@ -5,10 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Box</title>
+    <style>
+        .container{
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+
+            align-items: stretch; /*for nicher dike baranor jonno*/
+            border: 2px dotted grey;
+            height: 400px;
+
+        }
+        .box{
+            /* font-size: 3em; */
+            /* height: 200px; */
+            width: 200px;
+            border: 3px dashed rebeccapurple;
+        }
+
+
+        /* ai babe css use korle manubar  jast ultay jabe */
+        #box-1{
+            /* order: 2; */
+        }
+        #box-2{
+            /* order: 1; */
+            flex-grow: 1;
+        }
+    </style>
 </head>
 <body>
     <h1>
     Flexbox website layout
     </h1>
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">
+            <h3>BOX-2</h3>
+            <artical class="blog">
+                <h4>Blog-1</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor molestiae error voluptatibus architecto, quisquam corrupti sapiente. Nulla porro nisi ducimus fugiat a eos minima eaque ad, vel quod nostrum perspiciatis?</p>
+            </artical>
+            <artical class="blog">
+                <h4>Blog-2</h4>
+                <p>Asperiores, sed tempora et nobis impedit, accusantium error omnis debitis eveniet ex repellat, deleniti cupiditate sit quia velit doloremque perspiciatis qui vero voluptatibus? Quam itaque reiciendis consequuntur, animi ipsam doloremque.</p>
+            </artical>
+            <artical class="blog">
+                <h4>Blog-3</h4>
+                <p>Labore laborum facilis commodi ullam reiciendis nam! Repellat illo ut maxime facilis minima aut sapiente ipsa reiciendis, cum adipisci, nostrum autem. Sint eius cumque dolorum beatae, rerum debitis! Facilis, quasi.</p>
+            </artical>
+
+        </div>
+    </div>
 </body>
 </html>
